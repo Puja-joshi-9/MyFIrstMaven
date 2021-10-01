@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage("checkout"){
             steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Puja-joshi-9/MyFirstMaven.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: 'main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Puja-joshi-9/MyFirstMaven.git']]])
 
             }
         }
